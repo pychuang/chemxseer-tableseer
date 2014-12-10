@@ -590,7 +590,7 @@ public class BoxTableExtractor
 			Pattern tblKP = Pattern.compile("^\\(?(Table|lable|Tble|Tabl)",Pattern.CASE_INSENSITIVE);
 			Pattern tocKP = Pattern.compile("TableOfContent(s)?",Pattern.CASE_INSENSITIVE);
 			Pattern falsePos1 = Pattern.compile("Table");
-			Pattern falsePos2 = Pattern.compile("Table(s)?\\s+[\\d-]+(\\s+)?[\\.:-A-Z]");
+			Pattern falsePos2 = Pattern.compile("Table\\s+[\\d-]+(\\s+)?[\\.:-A-Z]");
 	
 			boolean tableExists = false;
 			boolean tableCaptionFormat = false;
